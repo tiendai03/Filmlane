@@ -1,0 +1,218 @@
+@import url(.//variables.css);
+@import url(./defaultlayout.css);
+@import url(./button.css);
+
+/* :root {
+    --section-padding: 350px;
+} */
+
+.container-login {
+    background: url(../images/service-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 750px;
+    height: 100vh;
+    max-height: 850px;
+    padding-block: var(--section-padding);
+  }
+
+.login {
+    width: 80%;
+    /* height: 60%; */
+    background: #ffffffe6;
+    /* position: absolute;
+    top: 25%;
+    left: 6.5%; */
+    margin: 30% 10%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 11px 2px #787676;
+}
+
+.login h1 {
+    text-align: center;
+    padding-block: 30px;
+}
+.box {
+    position: relative;
+    width: 95%;
+    height: 40px;
+    border-bottom: 2px solid #0000005a;
+    /* margin-bottom: 30px; */
+    margin: 5% 2.5% 5% 2.5%;
+}
+.heading-inp {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: var(--black);
+    font-weight: 500;
+    pointer-events: none;
+
+}
+
+.inp {
+    width: 97%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    transition: 0.5s;
+    margin-inline: 5px;
+}
+
+
+.box input:valid+label,
+.box input:focus+label {
+    top: -5px;
+    transition: 0.5s;
+}
+
+.box ion-icon {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    font-size: 20px;
+    color: var(--black);
+    line-height: 57px;
+
+}
+.btn-login {
+    display: flex;
+    width: 100%;
+    padding: 5% 0;
+}
+.btn-pr {
+    width: 35%;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid var(--citrine);
+    background-color: var(--eerie-black);
+    color: var(--white);
+    transition: var(--transition-1);
+    font-size: var(--fs-11);
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    margin-left: 10%;
+}
+
+.btn-pr:hover {
+    background-color: var(--citrine);
+    color: var(--xiketic);
+}
+
+.fogot-passwork {
+    width: 100%;
+}
+.fogot-passwork a{
+    padding: 10% 0;
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+}
+
+/**
+* Hỗ trợ các thiết bị
+*/
+
+@media (max-width: 550px) {
+
+    :root {
+      /* cỡ chữ */
+      --fs-1: 42px;
+  
+    }
+
+    .login {
+        width: 80%;
+        /* height: 60%; */
+        background: #ffffffe6;
+        margin: 30% 10%;
+        border-radius: 15px;
+        box-shadow: 0px 0px 11px 2px #787676;
+    }
+  
+  }
+
+/**
+ * responsive cho màn hình >= 550px
+ */
+
+ @media (min-width: 550px) {
+
+    :root {
+      /* cỡ chữ */
+      --fs-1: 42px;
+  
+    }
+  
+  }
+  
+  /**
+   * responsive cho màn hình >= 768px
+   */
+  
+  @media (min-width: 768px) {
+  
+    .login {
+        width: 30%;
+        /* height: 60%; */
+        background: #ffffffe6;
+        /* position: absolute;
+        top: 15%;
+        left: 36%; */
+        margin: 20% 36%;
+        border-radius: 15px;
+        box-shadow: 0px 0px 11px 2px #787676;
+    }
+
+  
+}
+  
+  /**
+   * responsive cho màn hình >= 992px
+   */
+  
+  @media (min-width: 992px) {
+    .login {
+        width: 30%;
+        /* height: 60%; */
+        background: #ffffffe6;
+        /* position: absolute;
+        top: 15%;
+        left: 36%; */
+        margin: 17% 35%;
+        border-radius: 15px;
+        box-shadow: 0px 0px 11px 2px #787676;
+    }
+
+  }
+  
+  
+  /**
+   * responsive cho màn hinh >= 1200px
+   */
+  
+  @media (min-width: 1200px) {
+  
+    .login {
+        width: 30%;
+        /* height: 60%; */
+        background: #ffffffe6;
+        /* position: absolute;
+        top: 25%;
+        left: 38%; */
+        /* left: 38%; */
+        margin: 8% 37%;
+        border-radius: 15px;
+        box-shadow: 0px 0px 11px 2px #787676;
+    }
+  
+    
+  }
